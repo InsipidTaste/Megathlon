@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | General Form Elements</title>
+  <title>Add Product</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -19,7 +19,8 @@
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="../../index3.html" class="nav-link">Home</a>
@@ -834,12 +835,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>General Form</h1>
+            <h1>Add Product</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">General Form</li>
+              <li class="breadcrumb-item active">Add Product</li>
             </ol>
           </div>
         </div>
@@ -856,22 +857,70 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Quick Example</h3>
+                <h3 class="card-title">Add a product</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
               <form>
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <label for="exampleInputName">Product Name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Product Name">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputDescription">Description</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Product Description">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
+                  <label for="exampleInputPrice">Price</label>
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">RM</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Enter Product Price" />
+                      <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="form-group my-3">
+                    <label for="exampleInputQuantity">Quantity</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Quantity">
+                  </div>
+                  <div class="form-group">
+                            <label>Brand</label>
+                            <select class="form-control">
+                            <option selected>Select Brand</option>
+                              <option>Brand 1</option>
+                              <option>Brand 2</option>
+                              <option>Brand 3</option>
+                              <option>Brand 4</option>
+                              <option>Brand 5</option>
+                            </select>
+                   </div>
+                  <div class="form-group">
+                            <label>Supplier</label>
+                            <select class="form-control">
+                            <option selected>Select Supplier</option>
+                              <option>Supplier 1</option>
+                              <option>Supplier 2</option>
+                              <option>Supplier 3</option>
+                              <option>Supplier 4</option>
+                              <option>Supplier 5</option>
+                            </select>
+                   </div>
+                  <div class="form-group">
+                            <label>Condition</label>
+                            <select class="form-control">
+                            <option selected>Select Condition</option>
+                              <option>Good</option>
+                              <option>Return</option>
+                              <option>Defect</option>
+                            </select>
+                   </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleInputFile">Product Picture</label>
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" id="exampleInputFile">
@@ -882,15 +931,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
                 </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="delete" class="btn btn-danger">Cancel</button>
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                  <button type="submit" class="btn btn-primary float-right">Submit</button>   
                 </div>
               </form>
             </div>
@@ -909,7 +956,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.2.0
     </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">Megathlon</a>.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
@@ -921,15 +968,15 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
 <!-- bs-custom-file-input -->
-<script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<script src="../js/bs-custom-file-input.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
+<script src="../js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+<script src="../js/demo.js"></script>
 <!-- Page specific script -->
 <script>
 $(function () {
