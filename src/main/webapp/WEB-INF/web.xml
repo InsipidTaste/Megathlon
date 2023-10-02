@@ -22,6 +22,12 @@
   	<description></description>
   	<servlet-class>com.Megathlon.Beans.Product</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Supplier</servlet-name>
+  	<display-name>Supplier</display-name>
+  	<description></description>
+  	<servlet-class>com.Megathlon.Controller.Supplier</servlet-class>
+  </servlet>
    <servlet-mapping>
   	<servlet-name>Login</servlet-name>
   	<url-pattern>/Login</url-pattern>
@@ -33,5 +39,9 @@
    <servlet-mapping>
    	<servlet-name>Product</servlet-name>
    	<url-pattern>/Product</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>Supplier</servlet-name>
+   	<url-pattern>/Supplier</url-pattern>
    </servlet-mapping>
 </web-app>
