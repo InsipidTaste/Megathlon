@@ -863,18 +863,16 @@
               <!-- form start -->
               <form>
                 <div class="card-body">
-                <div class="form-group">
-                    <label for="exampleInputName1">Product Id</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Product Id">
-                  </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Product Name</label>
+                    <label for="exampleInputName">Product Name</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Product Name">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Description</label>
+                    <label for="exampleInputDescription">Description</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Product Description">
                   </div>
+                  <div class="form-group">
+                  <label for="exampleInputPrice">Price</label>
                   <div class="input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text">RM</span>
@@ -884,6 +882,11 @@
                         <span class="input-group-text">.00</span>
                       </div>
                     </div>
+                    </div>
+                    <div class="form-group my-3">
+                    <label for="exampleInputQuantity">Quantity</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Quantity">
+                  </div>
                   <div class="form-group">
                             <label>Brand</label>
                             <select class="form-control">
