@@ -10,8 +10,28 @@
   	<description></description>
   	<servlet-class>com.Megathlon.Controller.Login</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>CreateProduct</servlet-name>
+  	<display-name>CreateProduct</display-name>
+  	<description></description>
+  	<servlet-class>com.Megathlon.Controller.CreateProduct</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Product</servlet-name>
+  	<display-name>Product</display-name>
+  	<description></description>
+  	<servlet-class>com.Megathlon.Beans.Product</servlet-class>
+  </servlet>
    <servlet-mapping>
   	<servlet-name>Login</servlet-name>
   	<url-pattern>/Login</url-pattern>
   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>CreateProduct</servlet-name>
+   	<url-pattern>/CreateProduct</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>Product</servlet-name>
+   	<url-pattern>/Product</url-pattern>
+   </servlet-mapping>
 </web-app>
